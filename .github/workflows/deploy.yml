@@ -15,4 +15,4 @@ jobs:
         ftp-username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
         ftp-password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
         local-dir: app/bedrock/web/app/themes/kokusai # どのディレクトリのデータをアップロードするか
-        --remote-root: /okinawa-futsal.com/public_html/wp-content/themes/kokusai # リモートのどのディレクトリにアップロードするか
+        REMOTE_DIR: /okinawa-futsal.com/public_html/wp-content/themes/kokusai # リモートのどのディレクトリにアップロードするか
