@@ -1,7 +1,7 @@
 on:
   push:                 # プッシュした時に実行
     branches:           # ブランチを指定
-      - bedrock    # masterブランチ
+      -master     # masterブランチ
 name: Build and Deploy  # アクションの名称
 jobs:
   FTP-Deploy-Action:
@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@master   # リポジトリのデータを仮想環境にチェックアウトしてくるアクションを実行する
 
-      - name: Use Node.js 12.13
+      - name: Use Node.js 12.16
         uses: actions/setup-node@v1     # Node.jsの環境をセットアップする
         with:
-          node-version: '12.13'         # v12.13のバージョンのNode環境を使用する
+          node-version: '12.16'         # v12.16のバージョンのNode環境を使用する
 
       - name: Build Project
         run: |
