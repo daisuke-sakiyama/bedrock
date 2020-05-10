@@ -14,7 +14,7 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
         ftp-username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
         ftp-password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
-        LOCAL_DIR: app/bedrock/web/app/themes/kokusai # どのディレクトリのデータをアップロードするか
-        REMOTE_DIR: /okinawa-futsal.com/public_html/wp-content/themes/kokusai # リモートのどのディレクトリにアップロードするか
-        ARGS: --delete
+        local-dir: app/bedrock/web/app/themes/kokusai # どのディレクトリのデータをアップロードするか
+        --remote-root: /okinawa-futsal.com/public_html/wp-content/themes/kokusai # リモートのどのディレクトリにアップロードするか
+        git-ftp-args: --delete
         # --delete arg will delete files on the server if you've deleted them in git
