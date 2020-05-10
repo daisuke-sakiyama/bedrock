@@ -1,7 +1,7 @@
 on:
   push:                 # プッシュした時に実行
     branches:           # ブランチを指定
-      -master     ### masterブランチ
+      - master    # masterブランチ
 name: Build and Deploy  # アクションの名称
 jobs:
   FTP-Deploy-Action:
@@ -10,16 +10,15 @@ jobs:
     steps:
       - uses: actions/checkout@master   # リポジトリのデータを仮想環境にチェックアウトしてくるアクションを実行する
 
-      - name: Use Node.js 12.x
+      - name: Use Node.js 12.13
         uses: actions/setup-node@v1     # Node.jsの環境をセットアップする
         with:
-          node-version: '12.x'         # v12.xのバージョンのNode環境を使用する
+          node-version: '12.13'         # v12.13のバージョンのNode環境を使用する
 
       - name: Build Project
         run: |
           npm install                     # npm install のコマンドを実行する
           npm run generate --if-present   # npm run generate のコマンドを実行する
-
       - name: List output files
         run: ls
 
@@ -29,7 +28,7 @@ jobs:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}     # FTPサーバーのURLを設定
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
-          LOCAL_DIR: app/bedrock/web/app/themes/kokusai # どのディレクトリのデータをアップロードするか
-          REMOTE_DIR: /okinawa-futsal.com/public_html//wp-content/themes/kokusai # リモートのどのディレクトリにアップロードするか
+          LOCAL_DIR: app/bedrock/web/app/themes/kokusai                           # どのディレクトリのデータをアップロードするか
+          REMOTE_DIR: /okinawa-futsal.com/public_html//wp-content/themes/kokusai       # リモートのどのディレクトリにアップロードするか
           ARGS: --delete
           # --delete arg will delete files on the server if you've deleted them in git
