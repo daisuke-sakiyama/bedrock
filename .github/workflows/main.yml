@@ -1,7 +1,7 @@
 on:
   push:                 # プッシュした時に実行
     branches:           # ブランチを指定
-      -master     ## masterブランチ
+      -master     ### masterブランチ
 name: Build and Deploy  # アクションの名称
 jobs:
   FTP-Deploy-Action:
