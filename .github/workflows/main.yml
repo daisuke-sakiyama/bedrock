@@ -10,10 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@master   # リポジトリのデータを仮想環境にチェックアウトしてくるアクションを実行する
 
-      - name: Use Node.js 12.16
+      - name: Use Node.js 12.x
         uses: actions/setup-node@v1     # Node.jsの環境をセットアップする
         with:
-          node-version: '12.16'         # v12.16のバージョンのNode環境を使用する
+          node-version: '12.x'         # v12.xのバージョンのNode環境を使用する
 
       - name: Build Project
         run: |
