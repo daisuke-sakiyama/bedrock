@@ -11,7 +11,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@master
       with:
-        ftp-server: ftp://okinawa-futsal.com/public_html/wp-content/themes/kokusai
+        ftp-server: ftp://okinawa-futsal.com/okinawa-futsal.com/public_html/wp-content/themes/kokusai
         ftp-username: ${{ secrets.FTP_USERNAME }} # FTPのユーザー名を設定
         ftp-password: ${{ secrets.FTP_PASSWORD }} # FTPのパスワードを設定
         local-dir: app/bedrock/web/app/themes/kokusai # どのディレクトリのデータをアップロードする
