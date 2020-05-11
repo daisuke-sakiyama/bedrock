@@ -1,0 +1,29 @@
+.c-btn--lang {
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+  border-radius: 3px;
+  -webkit-transition: border-color 0.8s linear, color 0.8s linear, opacity 0.95s linear 0.05s;
+  transition: border-color 0.8s linear, color 0.8s linear, opacity 0.95s linear 0.05s;
+
+  span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+  }
+
+  &.is-hover {
+    opacity: 0.4;
+    -webkit-transition: opacity 0.05s cubic-bezier(0, 0.6, 0.2, 1), border-color 0.8s linear, color 0.8s linear;
+    transition: opacity 0.05s cubic-bezier(0, 0.6, 0.2, 1), border-color 0.8s linear, color 0.8s linear;
+  }
+}

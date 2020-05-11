@@ -1,0 +1,339 @@
+.p-categoryTop__intro__bg--categoryName {
+  position: absolute;
+}
+
+.p-categoryTop__intro__bg--categoryName__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.p-categoryTop__intro__bg--map {
+  position: absolute;
+}
+
+.p-categoryTop__intro__bg--map__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.p-categoryTop__intro__bar {
+  position: absolute;
+  width: 31.25vw;
+  height: 20px;
+  top: 0;
+  left: 6.25vw;
+}
+
+.p-categoryTop {
+  &.yambaru {
+    .p-categoryTop__intro__bg--map {
+      width: 60.5vw;
+      height: 94.1875vw;
+      top: -17.5vw;
+      right: 9.375vw;
+    }
+
+    .p-categoryTop__intro__bg--map__img {
+      // background-image: url(images/journey/common/map_yambaru.svg);
+    }
+  }
+
+  &.iriomote {
+    .p-categoryTop__intro__bg--map {
+      width: 60.5vw;
+      height: 94.1875vw;
+      top: -17.5vw;
+      right: 9.375vw;
+    }
+
+    .p-categoryTop__intro__bg--map__img {
+      // background-image: url(images/journey/common/map_iriomote.svg);
+    }
+  }
+
+  &.tokunoshima {
+    .p-categoryTop__intro__bg--map {
+      width: 60.5vw;
+      height: 94.1875vw;
+      top: -17.5vw;
+      right: 9.375vw;
+    }
+
+    .p-categoryTop__intro__bg--map__img {
+      // background-image: url(images/journey/common/map_tokunoshima.svg);
+    }
+  }
+
+  &.amami {
+    .p-categoryTop__intro__bg--map {
+      width: 60.5vw;
+      height: 94.1875vw;
+      top: -17.5vw;
+      right: 9.375vw;
+    }
+
+    .p-categoryTop__intro__bg--map__img {
+      // background-image: url(images/journey/common/map_amami.svg);
+    }
+  }
+
+  &.activity {
+    .p-categoryTop__intro__bg--categoryName {
+      width: 96vw;
+      height: 22.75vw;
+      top: 35vh;
+      left: 0;
+    }
+
+    .p-categoryTop__intro__bg--categoryName__img {
+      // background-image: url(images/journey/common/activity.svg);
+    }
+
+    .p-category__card__label,
+    .p-categoryTop__intro__bar {
+      background-color: #3e7c75;
+    }
+  }
+
+  &.cuisine {
+    .p-categoryTop__intro__bg--categoryName {
+      width: 93.8125vw;
+      height: 14.6875vw;
+      top: 35vh;
+      left: 0;
+    }
+
+    .p-categoryTop__intro__bg--categoryName__img {
+      // background-image: url(images/journey/common/cuisine.svg);
+    }
+
+    .p-category__card__label,
+    .p-categoryTop__intro__bar {
+      background-color: #7c3e3e;
+    }
+  }
+
+  &.sightseeing {
+    .p-categoryTop__intro__bg--categoryName {
+      width: 98.3125vw;
+      height: 18.75vw;
+      top: 35vh;
+      left: 0;
+    }
+
+    .p-categoryTop__intro__bg--categoryName__img {
+      // background-image: url(images/journey/common/sightseeing.svg);
+    }
+
+    .p-category__card__label,
+    .p-categoryTop__intro__bar {
+      background-color: #3e457c;
+    }
+  }
+
+  &.accommodation {
+    .p-categoryTop__intro__bg--categoryName {
+      width: 171.9vw;
+      height: 17.625vw;
+      top: 35vh;
+      left: 0;
+    }
+
+    .p-categoryTop__intro__bg--categoryName__img {
+      // background-image: url(images/journey/common/accommodation.svg);
+    }
+
+    .p-category__card__label,
+    .p-categoryTop__intro__bar {
+      background-color: #8a8233;
+    }
+  }
+}
+
+.p-categoryTop__mainVisual {
+  height: 60vh;
+}
+
+.p-categoryTop__mainVisual__title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: 2vw;
+  color: #fff;
+  line-height: 1;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  z-index: 50;
+
+  > {
+    span {
+      margin-bottom: 1vw;
+      font-size: 3.75vw;
+      letter-spacing: 0.05em;
+    }
+
+    strong {
+      margin-bottom: 0.8vw;
+      font-size: 6.25vw;
+      letter-spacing: 0.05em;
+    }
+
+    small {
+      font-size: 1.875vw;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+.p-categoryTop__intro {
+  position: relative;
+  padding-bottom: calc(6.25vw - 20px);
+  overflow: hidden;
+}
+
+.p-categoryTop__intro__head {
+  position: relative;
+  z-index: 20;
+  height: 40vh;
+}
+
+.p-categoryTop__intro__head__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+
+  p {
+    width: 500px;
+    padding-right: 80px;
+  }
+}
+
+.p-categoryTop__intro__foot {
+  position: relative;
+  z-index: 20;
+}
+
+@media screen and (min-width: 1600px) {
+  .p-categoryTop__mainVisual__title > {
+    span {
+      margin-bottom: 16px;
+      font-size: 6rem;
+    }
+
+    strong {
+      margin-bottom: 12px;
+      font-size: 10rem;
+    }
+
+    small {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .p-categoryTop__intro__bar {
+    left: 3.125vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .p-categoryTop__intro__bar {
+    left: 31px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-categoryTop__mainVisual {
+    height: 80vh;
+  }
+
+  .p-categoryTop__mainVisual__title {
+    left: 0;
+    margin-top: 0;
+
+    > {
+      span {
+        margin-bottom: 1vw;
+        font-size: 8vw;
+      }
+
+      strong {
+        margin-bottom: 0.8vw;
+        font-size: 13.3333vw;
+      }
+
+      small {
+        font-size: 4vw;
+      }
+    }
+  }
+
+  .p-categoryTop__intro {
+    padding-bottom: calc(11.3vw - 0px);
+  }
+
+  .p-categoryTop__intro__bar {
+    width: 100%;
+    height: 10px;
+    left: 0;
+  }
+
+  .p-categoryTop__intro__head {
+    height: auto;
+    padding-bottom: 14.66667vw;
+  }
+
+  .p-categoryTop__intro__head__btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .p-categoryTop__intro__head__inner {
+    display: block;
+    position: relative;
+    top: auto;
+    width: 100%;
+    padding-top: 22.66667vw;
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-transform: none;
+    transform: none;
+
+    p {
+      width: 100%;
+      margin-bottom: 14.66667vw;
+      padding-right: 0;
+    }
+  }
+
+  .p-categoryTop__intro__foot__inner {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

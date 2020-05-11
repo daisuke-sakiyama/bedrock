@@ -1,0 +1,120 @@
+.p-footerGNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-left: 60px;
+  line-height: 1;
+
+  a {
+    color: #fff;
+  }
+
+  .p-dropNav {
+    top: 60px;
+  }
+
+  .p-dropNav__inner {
+    background-color: #404040;
+  }
+
+  .p-dropNav a {
+    color: #fff;
+  }
+
+  .p-localizationNav__menu {
+    background-color: #404040;
+
+    a {
+      color: #fff;
+    }
+
+    .c-btn--arrow__bar span {
+      background-color: #fff;
+    }
+  }
+
+  .p-localNav__menu__item a::before {
+    background-image: url(images/icon/arrow_line_white.svg);
+  }
+
+  .p-localNav__title::after {
+    background-color: #404040;
+  }
+
+  .js-parent--dropNav.is-show > a {
+    background-color: #404040;
+    color: #fff;
+
+    span {
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.p-footerGNav__head {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  margin-left: -15px;
+
+  &::before {
+    display: block;
+    width: 1px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    background-color: hsla(0, 0%, 100%, 0.3);
+  }
+}
+
+.p-footerGNav__foot {
+  position: relative;
+  padding-left: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-footerGNav {
+    display: block;
+    margin-top: 17.5px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.15);
+
+    .p-dropNav {
+      top: 40px;
+    }
+  }
+
+  .p-footerGNav__head {
+    width: 100%;
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .p-footerGNav__foot {
+    position: absolute;
+    top: 12px;
+    right: 0;
+  }
+}

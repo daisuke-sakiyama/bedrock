@@ -1,0 +1,19 @@
+.c-banner--bg {
+  position: relative;
+  overflow: hidden;
+
+  &.parallax-x .c-banner--bg__img {
+    width: calc(100% + 30px);
+    left: 0;
+  }
+
+  &.parallax-y .c-banner--bg__img {
+    height: calc(100% + 150px);
+    left: 0;
+  }
+
+  &.left .c-banner--bg__img {
+    right: 0;
+    left: auto;
+  }
+}

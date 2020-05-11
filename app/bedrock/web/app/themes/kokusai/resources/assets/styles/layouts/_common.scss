@@ -1,0 +1,61 @@
+.l-container--middle {
+  padding-right: 6.25vw;
+  padding-left: 6.25vw;
+}
+
+.l-container--wide {
+  width: 87.5vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.l-page-content {
+  position: relative;
+
+  &.journey::before {
+    display: block;
+    width: 75vw;
+    height: 1px;
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #e5e5e5;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .l-container--middle {
+    padding-right: 3.125vw;
+    padding-left: 3.125vw;
+  }
+
+  .l-page-content.journey::before {
+    width: 81.25vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .l-container--middle {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .l-page-content.journey::before {
+    width: calc(87.5vw - 62px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .l-container--middle {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .l-page-content.journey::before {
+    width: 87.5vw;
+  }
+}

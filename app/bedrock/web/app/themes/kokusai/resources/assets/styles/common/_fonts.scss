@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "butler_regular";
+  src: url("/wp/wp-content/themes/sumuka/resources/assets/fonts/BUTLER_REGULAR.OTF");
+}
+
+@font-face {
+  font-family: "utsukushiregular";
+  src: url("/wp/wp-content/themes/sumuka/resources/assets/fonts/UtsukushiFONT.otf");
+}
+
+.fonts__b--regular {
+  font-family: "butler_regular", serif;
+}
+
+.fonts__r {
+  font-family: "Roboto", sans-serif;
+}
+
+.txt-cmn-mincho {
+  font-family: "utsukushiregular", ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, HiraMinProN-W3, 游明朝, Yu Mincho, 游明朝体, YuMincho, HGS明朝E, HG明朝E, ＭＳ Ｐ明朝, MS PMincho, serif;
+}
+
+.txt-cmn-yugothic {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}

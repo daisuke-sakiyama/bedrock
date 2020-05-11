@@ -1,0 +1,49 @@
+.l-mainVisual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  &.height90 {
+    height: 90vh;
+  }
+
+  &.video::after {
+    display: block;
+    content: "";
+    // background-image: url(images/common/filter_video.png);
+    background-repeat: repeat;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.l-mainVisual__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  overflow: hidden;
+}
+
+.l-mainVisual__scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+}
+
+@media screen and (max-width: 768px) {
+  .l-mainVisual__scroll.c-btn--scrollRecommend {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.c-article {
+  font-size: 1.6rem;
+  line-height: 2;
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+  }
+
+  img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-article {
+    font-size: 1.3rem;
+    line-height: 1.85;
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.85;
+    }
+
+    img,
+    p:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+}

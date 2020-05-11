@@ -1,0 +1,84 @@
+.c-verticalBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.c-verticalBlock__head {
+  width: 31.25vw;
+  padding-left: 12.5vw;
+  padding-bottom: 18.125vw;
+}
+
+.c-verticalBlock__foot {
+  position: relative;
+  max-width: 500px;
+  padding-top: 13.75vw;
+
+  &::before {
+    display: block;
+    width: 260px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    top: 10vw;
+    left: 0;
+    background-color: #1a1a1a;
+  }
+}
+
+.c-verticalBlock__title {
+  font-size: 7.5vw;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+  -webkit-transform: rotate(90deg) translateY(-2em);
+  transform: rotate(90deg) translateY(-2em);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1600px) {
+  .c-verticalBlock__head {
+    padding-bottom: 290px;
+  }
+
+  .c-verticalBlock__foot {
+    padding-top: 220px;
+
+    &::before {
+      top: 160px;
+    }
+  }
+
+  .c-verticalBlock__title {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-verticalBlock {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .c-verticalBlock__head {
+    width: 40%;
+    padding-left: 0;
+    padding-bottom: 30vw;
+  }
+
+  .c-verticalBlock__foot {
+    padding-top: 75px;
+
+    &::before {
+      width: 34.5vw;
+      top: 50px;
+    }
+  }
+
+  .c-verticalBlock__title {
+    font-size: 13.3vw;
+  }
+}
