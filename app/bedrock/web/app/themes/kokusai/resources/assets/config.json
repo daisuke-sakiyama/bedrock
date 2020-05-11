@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/sumuka",
-  "devUrl": "http://sumuka.local",
+  "publicPath": "/app/themes/kokusai",
+  "devUrl": "http://bedrock.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
